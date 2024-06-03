@@ -1,0 +1,98 @@
+.about {
+  &__header {
+    height: 16vh;
+    background-color: #F6EEE1;
+    text-align: center;
+
+    &-inner {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      height: 100%;
+    }
+
+    &-cloud {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    &-title {
+      position: relative;
+      color: #CCA56E;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 25px;
+      z-index: 1;
+    }
+
+    &-line {
+      @media screen and (max-width: 540px) {
+        width: 100%;
+      }
+    }
+  }
+
+  &-inner {
+    position: relative;
+    height: 84vh;
+    background-image: url('../images/Art.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__wrapper {
+      padding-top: 225px;
+      color: #FFFFFF;
+
+      @media screen and (max-width: 992px) {
+        text-align: center;
+      }
+    }
+
+    &__description, &__title {
+      position: relative;
+      z-index: 2;
+    }
+
+    &__description {
+      max-width: 460px;
+      margin-bottom: 30px;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 55px;
+
+      @media screen and (max-width: 992px) {
+        max-width: 100%;
+      }
+    }
+
+    &_subdescription {
+      max-width: 700px;
+      margin-bottom: 165px;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    &__title {
+      font-size: 64px;
+      font-weight: 400;
+
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+
+    &__glass {
+      position: absolute;
+      right: 250px;
+      bottom: -90px;
+
+      @media screen and (max-width: 992px) {
+        display: none;
+      }
+    }
+  }
+}

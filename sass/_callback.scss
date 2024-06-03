@@ -1,0 +1,134 @@
+.callback {
+  padding: 27px 0 93px 0;
+  background-color: #F6EEE1;
+
+  &-header {
+    display: flex;
+    margin-bottom: 56px;
+
+    .section-header {
+      flex: 1;
+      border-bottom: 3px solid #2B2A29;
+
+      @media screen and (max-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: none;
+      }
+
+      &__lines {
+        @media screen and (max-width: 768px) {
+          order: 1;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  .form {
+    &__title, &__description {
+      font-weight: 400;
+      color: #2B2A29;
+      text-align: center;
+    }
+
+    &__title {
+      margin-bottom: 25px;
+      font-size: clamp(32px, 3vw, 64px);
+    }
+
+    &__description {
+      margin-bottom: 85px;
+      font-size: clamp(20px, 3vw, 24px);
+    }
+
+    &__fields {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 120px;
+
+      &-input {
+        width: 49%;
+        padding: 28px 0 12px 0;
+
+        @media screen and (max-width: 640px) {
+          width: 100%;
+        }
+      }
+
+      &-message {
+        margin-top: 72px;
+        width: 100%;
+        resize: none;
+
+        @media screen and (max-width: 640px) {
+          margin-top: 30px;
+        }
+      }
+
+      &-input, &-message {
+        border: none;
+        border-bottom: 3px solid #2b2a29;
+        font-size: 24px;
+        font-weight: 700;
+        color: #2B2A29;
+        background: transparent;
+
+        &::placeholder {
+          font-size: 24px;
+          font-weight: 700;
+          color: #2B2A29;
+        }
+      }
+
+      &-error {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -35px;
+        display: none;
+        text-align: center;
+        color: red;
+        font-size: clamp(16px, 3vw, 24px);
+
+        &_active {
+          display: block;
+        }
+      }
+    }
+
+    .button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .wrapper-success {
+    display: none;
+    height: 572px;
+    justify-content: center;
+    align-items: center;
+
+    &_active {
+      display: flex;
+
+      & + .form {
+        display: none;
+      }
+    }
+
+    &__title {
+      color: #2B2A29;
+      font-size: 40px;
+    }
+  }
+}

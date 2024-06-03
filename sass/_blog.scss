@@ -1,0 +1,26 @@
+.blog {
+  background-color: #F6EEE1;
+  padding-bottom: 60px;
+
+  .section-header {
+    margin-bottom: 60px;
+  }
+
+  .slider {
+    @include flex;
+    padding-left: 110px;
+
+    @media screen and (max-width: 1400px) {
+      flex-wrap: wrap;
+      padding-left: 0;
+    }
+
+    &__preview {
+      border-radius: 16px;
+
+      @media screen and (max-width: 1400px) {
+        margin: 0 auto 40px auto;
+      }
+    }
+  }
+}

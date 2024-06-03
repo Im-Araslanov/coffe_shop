@@ -1,0 +1,25 @@
+.swiper {
+  position: relative;
+  width: 580px;
+
+  @media screen and (max-width: 1400px) {
+    width: 100%;
+  }
+
+  &-slide {
+    &__title {
+      margin-bottom: 8px;
+      color: #2B2A29;
+      font-size: 40px;
+      font-weight: 400;
+      line-height: 55px;
+    }
+
+    &__description {
+      color: #2B2A29;
+      font-size: 24px;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+}

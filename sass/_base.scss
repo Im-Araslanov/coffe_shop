@@ -1,0 +1,51 @@
+.container {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 46px;
+
+  &-secondary {
+    max-width: 1750px;
+    margin: 0 auto;
+    padding: 0 46px;
+  }
+}
+
+.button {
+  padding: 23px 46px;
+  font-size: 24px;
+  font-weight: 400;
+  background-color: transparent;
+  color: #FFFFFF;
+  border-radius: 37px;
+  border: 4px solid #FFF;
+  cursor: pointer;
+  transition: 0.5s;
+
+  &:hover {
+    border-color: #CCA56E;
+    color: #CCA56E;
+  }
+
+  &_black {
+    border-color: #2B2A29;
+    color: #2B2A29;
+  }
+}
+
+.section-header {
+  text-align: center;
+
+  &__title {
+    font-size: clamp(20px, 3vw, 26px);
+    font-style: normal;
+    font-weight: 700;/* 140.625% */
+    letter-spacing: clamp(20px, 3vw, 26px);
+    color: #CCA56E;
+  }
+
+  &__lines {
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/reset.css">
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+  />
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main class="main">
+    <div class="container-secondary">
+      <header class="header">
+        <div class="header__burger" id="burger">
+          <span class="header__burger-line"></span>
+        </div>
+
+        <div class="header__navigation">
+          <img src="./images/Logo.svg" alt="" class="logo">
+
+          <nav class="navigation" id="nav">
+            <ul class="navigation__list">
+              <li class="navigation__item">
+                <a href="#about" class="navigation__item-link">
+                  О компании
+                </a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="" class="navigation__item-link">
+                  Каталог кофе
+                </a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="#blog" class="navigation__item-link">
+                  Блог
+                </a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="" class="navigation__item-link">
+                  Рецепты
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__params">
+          <div class="header__icons">
+            <img src="./images/icons/Icon_user.svg" alt="">
+            <img src="./images/icons/Icon_bookmark.svg" alt="">
+          </div>
+  
+          <a href="" class="header__basket">Корзина</a>
+        </div>
+
+        <img src="./images/icons/fon_basket.png" alt="" class="header__basket-fon">
+      </header>
+
+      <h1 class="title">Просто выбрать, <br> легко наслаждаться</h1>
+      <button class="button">Выбрать кофе</button>
+    </div>
+  </main>
+
+  <section class="about" id="about">
+    <header class="about__header">
+      <div class="container about__header-inner">
+        <h3 class="about__header-title">О КОМПАНИИ</h3>
+        <img class="about__header-line" src="./images/icons/lines.svg" alt="">
+        <img class="about__header-cloud" src="./images/icons/cloud.svg" alt="">
+      </div>
+    </header>
+
+    <div class="about-inner">
+      <div class="container about-inner__wrapper">
+        <p class="about-inner__description">
+          Мы готовим кофе из высококачественных зерен от лучших обжарщиков со всего мира
+        </p>
+        <p class="about-inner__description about-inner_subdescription">
+          Мы хотим, чтобы каждый кофеман мог насладиться настоящим кофе, сколько бы свободного времени у него на это ни было. Coffee bean - это не только отличный кофе, но и шоколад ручной работы по авторским рецептам
+        </p>
+        <h3 class="about-inner__title">Начни свой день с кофе</h3>
+
+        <img class="about-inner__glass" src="./images/glass.svg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="blog" id="blog">
+    <header class="section-header">
+      <img class="section-header__lines" src="./images/icons/lines.svg" alt="">
+      <h2 class="section-header__title">БЛОГ</h2>
+    </header>
+
+    <div class="container">
+      <div class="slider">
+        <iframe class="slider__preview" width="530" height="320" src="https://www.youtube.com/embed/a1-uPceI4L8?si=GC4AZlcN663lW9Kr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <h4 class="swiper-slide__title">
+                Как улучшить вкус вашего эспрессо - вкусовой компас
+              </h4>
+              <p class="swiper-slide__description">
+                Не получается эспрессо? Воспользуйтесь компасом баристы <br> для того, чтобы получить идеально сбалансированный вкус
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <h4 class="swiper-slide__title">
+                Как улучшить вкус вашего эспрессо - вкусовой компас
+              </h4>
+              <p class="swiper-slide__description">
+                Не получается эспрессо? Воспользуйтесь компасом баристы <br> для того, чтобы получить идеально сбалансированный вкус
+              </p>
+            </div>
+          </div>
+        
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="callback">
+    <div class="container-secondary callback-header">
+      <header class="section-header">
+        <img class="section-header__lines" src="./images/icons/lines.svg" alt="">
+        <h2 class="section-header__title">ОБРАТНАЯ СВЯЗЬ</h2>
+      </header>
+
+      <img src="./images/Logo.svg" alt="" class="callback__logo">
+    </div>
+
+    <div class="container">
+      <div class="wrapper-success" id="success">
+        <h3 class="wrapper-success__title">Успеная отправка</h3>
+      </div>
+      <form action="" class="form">
+        <h3 class="form__title">Остались вопросы?</h3>
+        <p class="form__description">
+          Заполните заявку и наш специалист свяжется с Вами в кратчайшие сроки
+        </p>
+
+        <div class="form__fields">
+          <input type="text" class="form__fields-input" placeholder="Ваше имя" id="name">
+          <input type="text" class="form__fields-input" placeholder="E-mail" id="email">
+          <textarea name="" class="form__fields-message" placeholder="Сообщение" id="message"></textarea>
+
+          <div class="form__fields-error" id="error">
+            Поля ввода должны быть заполнены, пожалуйста заполните их перед отправкой
+          </div>
+        </div>
+
+        <button class="button button_black" id="submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container-secondary footer__wrapper">
+      <img src="./images/Logo.svg" alt="" class="footer__logo">
+
+      <nav class="footer__navigation">
+        <ul class="footer__navigation-list">
+          <li class="footer__navigation-item">
+            <a href="" class="footer__navigation-link">
+              О компании
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="" class="footer__navigation-link">
+              Контакты
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="" class="footer__navigation-link">
+              Зерновой кофе
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="" class="footer__navigation-link">
+              Кофе в капсулах
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="" class="footer__navigation-link">
+              Оплата
+            </a>
+          </li>
+          <li class="footer__navigation-item">
+            <a href="" class="footer__navigation-link">
+              Доставка
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer__feedback">
+        <a href="tel:+7 (917) 318-38-28" class="footer__feedback-item">
+          +7 (917) 318-38-28
+        </a>
+        <a href="" class="footer__feedback-item">
+          Обратный звонок
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>
