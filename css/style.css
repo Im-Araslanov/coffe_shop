@@ -317,6 +317,7 @@
   display: flex;
   align-items: center;
   padding-left: 110px;
+  gap: 50px;
 }
 @media screen and (max-width: 1400px) {
   .blog .slider {
@@ -336,11 +337,18 @@
 .swiper {
   position: relative;
   width: 580px;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (max-width: 1400px) {
   .swiper {
     width: 100%;
   }
+}
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
 }
 .swiper-slide__title {
   margin-bottom: 8px;
