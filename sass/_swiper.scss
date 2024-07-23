@@ -1,12 +1,18 @@
 .swiper {
   position: relative;
   width: 580px;
+  display: flex;
+  flex-direction: column;
+
 
   @media screen and (max-width: 1400px) {
     width: 100%;
   }
 
   &-slide {
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
     &__title {
       margin-bottom: 8px;
       color: #2B2A29;
